@@ -1,0 +1,260 @@
+/* General body and container styling */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navbar styling */
+.header {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #4B0082;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #4B0082;
+    text-decoration: underline;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: border-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    border-color: #4B0082;
+}
+
+/* Searchbar styling */
+.searchbar {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.searchbar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex: 1;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.search-icon {
+    color: #4B0082;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Content wrapper styling */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* About Appware and Sidebar sections */
+.about-and-sidebar {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+/* About Appware section styling */
+.about-section {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.bottom-right-info {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-right-info img {
+    width: 100px;
+    height: 100px;
+}
+
+.bottom-right-text {
+    color: #0000FF;
+    font-weight: bold;
+    margin-top: 10px; /* Space between image and text */
+}
+
+.bottom-right-text::after {
+    content: " TM";
+    font-size: 10px;
+    vertical-align: super;
+}
+
+.mission-statement {
+    color: #4B0082;
+    font-weight: bold;
+}
+
+/* Sidebar styling */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0ff; /* Light purple background */
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px; /* Curved edges */
+}
+
+.sidebar-button:hover {
+    background-color: #e0e0f5;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 22px;
+    color: #4B0082;
+}
+
+/* Announcements section styling */
+.announcements-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 20px);
+    align-self: flex-end;
+}
+
+.announcement {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.announcement h3 {
+    color: #4B0082;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.announcement p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.announcement strong {
+    font-weight: bold;
+}
+
+.announcement-button {
+    background-color: transparent;
+    color: #4B0082;
+    padding: 10px 20px;
+    border: 2px solid #4B0082;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.announcement-button:hover {
+    background-color: #4B0082;
+    color: #ffffff;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #4B0082;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
